@@ -1,0 +1,145 @@
+/* line 8, ../sass/extras.scss */
+.btn-blog {
+  color: #4B89D6;
+  background-color: #fff;
+  border-color: #4B89D6;
+}
+/* line 11, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-blog:hover, .btn-blog:focus, .btn-blog.focus, .btn-blog:active, .btn-blog.active, .open > .btn-blog.dropdown-toggle {
+  color: #4B89D6;
+  background-color: #e6e6e6;
+  border-color: #2a6aba;
+}
+/* line 21, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-blog:active, .btn-blog.active, .open > .btn-blog.dropdown-toggle {
+  background-image: none;
+}
+/* line 29, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-blog.disabled, .btn-blog.disabled:hover, .btn-blog.disabled:focus, .btn-blog.disabled.focus, .btn-blog.disabled:active, .btn-blog.disabled.active, .btn-blog[disabled], .btn-blog[disabled]:hover, .btn-blog[disabled]:focus, .btn-blog[disabled].focus, .btn-blog[disabled]:active, .btn-blog[disabled].active, fieldset[disabled] .btn-blog, fieldset[disabled] .btn-blog:hover, fieldset[disabled] .btn-blog:focus, fieldset[disabled] .btn-blog.focus, fieldset[disabled] .btn-blog:active, fieldset[disabled] .btn-blog.active {
+  background-color: #fff;
+  border-color: #4B89D6;
+}
+/* line 40, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-blog .badge {
+  color: #fff;
+  background-color: #4B89D6;
+}
+/* line 10, ../sass/extras.scss */
+.btn-blog:hover {
+  background-color: #4B89D6;
+  border-color: #4B89D6;
+  color: #fff;
+}
+
+/* line 16, ../sass/extras.scss */
+.btn-cv {
+  color: #3CE01F;
+  background-color: #fff;
+  border-color: #3CE01F;
+}
+/* line 11, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-cv:hover, .btn-cv:focus, .btn-cv.focus, .btn-cv:active, .btn-cv.active, .open > .btn-cv.dropdown-toggle {
+  color: #3CE01F;
+  background-color: #e6e6e6;
+  border-color: #2eaa18;
+}
+/* line 21, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-cv:active, .btn-cv.active, .open > .btn-cv.dropdown-toggle {
+  background-image: none;
+}
+/* line 29, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-cv.disabled, .btn-cv.disabled:hover, .btn-cv.disabled:focus, .btn-cv.disabled.focus, .btn-cv.disabled:active, .btn-cv.disabled.active, .btn-cv[disabled], .btn-cv[disabled]:hover, .btn-cv[disabled]:focus, .btn-cv[disabled].focus, .btn-cv[disabled]:active, .btn-cv[disabled].active, fieldset[disabled] .btn-cv, fieldset[disabled] .btn-cv:hover, fieldset[disabled] .btn-cv:focus, fieldset[disabled] .btn-cv.focus, fieldset[disabled] .btn-cv:active, fieldset[disabled] .btn-cv.active {
+  background-color: #fff;
+  border-color: #3CE01F;
+}
+/* line 40, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-cv .badge {
+  color: #fff;
+  background-color: #3CE01F;
+}
+/* line 18, ../sass/extras.scss */
+.btn-cv:hover {
+  background-color: #3CE01F;
+  border-color: #3CE01F;
+  color: #fff;
+}
+
+/* line 24, ../sass/extras.scss */
+.btn-projects {
+  color: #E01F39;
+  background-color: #fff;
+  border-color: #E01F39;
+}
+/* line 11, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-projects:hover, .btn-projects:focus, .btn-projects.focus, .btn-projects:active, .btn-projects.active, .open > .btn-projects.dropdown-toggle {
+  color: #E01F39;
+  background-color: #e6e6e6;
+  border-color: #aa182b;
+}
+/* line 21, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-projects:active, .btn-projects.active, .open > .btn-projects.dropdown-toggle {
+  background-image: none;
+}
+/* line 29, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-projects.disabled, .btn-projects.disabled:hover, .btn-projects.disabled:focus, .btn-projects.disabled.focus, .btn-projects.disabled:active, .btn-projects.disabled.active, .btn-projects[disabled], .btn-projects[disabled]:hover, .btn-projects[disabled]:focus, .btn-projects[disabled].focus, .btn-projects[disabled]:active, .btn-projects[disabled].active, fieldset[disabled] .btn-projects, fieldset[disabled] .btn-projects:hover, fieldset[disabled] .btn-projects:focus, fieldset[disabled] .btn-projects.focus, fieldset[disabled] .btn-projects:active, fieldset[disabled] .btn-projects.active {
+  background-color: #fff;
+  border-color: #E01F39;
+}
+/* line 40, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+.btn-projects .badge {
+  color: #fff;
+  background-color: #E01F39;
+}
+/* line 26, ../sass/extras.scss */
+.btn-projects:hover {
+  background-color: #E01F39;
+  border-color: #E01F39;
+  color: #fff;
+}
+
+/* line 34, ../sass/extras.scss */
+.buffer {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 43, ../sass/extras.scss */
+.vertically-centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 49, ../sass/extras.scss */
+.no-padding {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 55, ../sass/extras.scss */
+.navigation {
+  margin-top: 15px;
+}
+
+/* line 59, ../sass/extras.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 64, ../sass/extras.scss */
+.btn {
+  border-radius: 0px;
+}
+
+/* line 68, ../sass/extras.scss */
+.masthead {
+  padding: 10px;
+  border: 1px solid #333;
+  color: #333;
+}

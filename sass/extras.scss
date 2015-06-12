@@ -1,9 +1,14 @@
 @import "bootstrap/mixins";
+@import "bootstrap/variables";
 $blog-color: #4B89D6;
 $projects-color: #E01F39;
+$projects-color-lighten: lighten($projects-color, 10%);
+$projects-color-soft: lighten($projects-color, 40%);
+$projects-color-darken: darken($projects-color, 10%);
 $cv-color: #3CE01F;
 $white: #fff;
 $off-black: #333;
+$margin-size: 28px;
 
 .btn-blog {
    @include button-variant($blog-color, $white, $blog-color);
@@ -30,20 +35,48 @@ $off-black: #333;
    }
 }
 
-
 .buffer
 {
-  width: 50%;
-  height: 50%;
+  @media (min-width: $screen-sm) {
   margin: auto;
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
+  height:50%;
+  }
 }
 
 .vertically-centered {
+  @media (min-width: $screen-sm) {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+}
+
+.buffer-show-xs
+{
+  
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height:50%;
+  
+}
+
+.bottom-margin {
+  margin-bottom:$margin-size;
+}
+
+.vertically-centered-show-xs {
+  
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.top-screen-padding {
+  margin-top:$margin-size;
 }
 
 .no-padding 
@@ -53,7 +86,7 @@ $off-black: #333;
 }
 
 .navigation {
-  margin-top:15px;
+  margin-top:$margin-size;
 }
 
 body 
@@ -67,7 +100,6 @@ body
 
 .masthead {
   padding:10px;
-  //background-color: $cv-color;
   border:1px solid $off-black;
   color:$off-black;
 }

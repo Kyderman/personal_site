@@ -9,6 +9,8 @@ $cv-color: #3CE01F;
 $white: #fff;
 $off-black: #333;
 $margin-size: 28px;
+$gareth-color: #232323;
+$bitk-color: #4051B3;
 
 .btn-blog {
    @include button-variant($blog-color, $white, $blog-color);
@@ -52,6 +54,84 @@ $margin-size: 28px;
   transform: translateY(-50%);
 }
 }
+
+.project-gareth {
+  padding:10px;
+  color:$white;
+  background-color: $gareth-color;
+}
+
+.project-gareth-header {
+  padding:10px;
+  color:$white;
+  background-color: lighten($gareth-color, 10%);
+}
+
+.project-bitk, .project-bitk-tech-header {
+  padding:10px;
+  color:$white;
+  background-color: $bitk-color;
+}
+
+.project-bitk-header {
+  padding:10px;
+  color:$white;
+  background-color: lighten($bitk-color, 10%);
+}
+
+.project-bitk-tech-item {
+  padding:5px;
+  color:$white;
+  background-color: lighten($bitk-color, 10%);
+
+   &:not(:last-of-type) {
+    border-bottom: 2px solid $bitk-color;
+   }
+}
+
+.project-bitk-role-text {
+  padding:10px;
+  color:$white;
+  background-color: lighten($bitk-color, 10%);
+
+  
+}
+
+.project-bitk-link {
+  padding:10px;
+  color:$white;
+  background-color: darken($bitk-color, 10%);
+  width:100%;
+  display:block;
+  &:hover {
+     color:$white;
+     background-color: darken($bitk-color, 20%);
+  }
+}
+
+.project-gareth-link {
+  padding:10px;
+  color:$white;
+  background-color: darken($gareth-color, 10%);
+  width:100%;
+  display:block;
+  &:hover {
+     color:$white;
+     background-color: darken($gareth-color, 20%);
+  }
+}
+
+a, a:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.tech-bitk {
+  padding:10px;
+  color:$white;
+  background-color: $bitk-color;
+}
+
 
 .buffer-show-xs
 {

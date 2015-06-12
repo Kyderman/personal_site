@@ -1,4 +1,4 @@
-/* line 13, ../sass/extras.scss */
+/* line 15, ../sass/extras.scss */
 .btn-blog {
   color: #4B89D6;
   background-color: #fff;
@@ -24,14 +24,14 @@
   color: #fff;
   background-color: #4B89D6;
 }
-/* line 15, ../sass/extras.scss */
+/* line 17, ../sass/extras.scss */
 .btn-blog:hover {
   background-color: #4B89D6;
   border-color: #4B89D6;
   color: #fff;
 }
 
-/* line 21, ../sass/extras.scss */
+/* line 23, ../sass/extras.scss */
 .btn-cv {
   color: #3CE01F;
   background-color: #fff;
@@ -57,14 +57,14 @@
   color: #fff;
   background-color: #3CE01F;
 }
-/* line 23, ../sass/extras.scss */
+/* line 25, ../sass/extras.scss */
 .btn-cv:hover {
   background-color: #3CE01F;
   border-color: #3CE01F;
   color: #fff;
 }
 
-/* line 29, ../sass/extras.scss */
+/* line 31, ../sass/extras.scss */
 .btn-projects {
   color: #E01F39;
   background-color: #fff;
@@ -90,7 +90,7 @@
   color: #fff;
   background-color: #E01F39;
 }
-/* line 31, ../sass/extras.scss */
+/* line 33, ../sass/extras.scss */
 .btn-projects:hover {
   background-color: #E01F39;
   border-color: #E01F39;
@@ -98,7 +98,7 @@
 }
 
 @media (min-width: 768px) {
-  /* line 38, ../sass/extras.scss */
+  /* line 40, ../sass/extras.scss */
   .buffer {
     margin: auto;
     position: fixed;
@@ -111,7 +111,7 @@
 }
 
 @media (min-width: 768px) {
-  /* line 48, ../sass/extras.scss */
+  /* line 50, ../sass/extras.scss */
   .vertically-centered {
     position: relative;
     top: 50%;
@@ -119,7 +119,96 @@
   }
 }
 
-/* line 56, ../sass/extras.scss */
+/* line 58, ../sass/extras.scss */
+.project-gareth {
+  padding: 10px;
+  color: #fff;
+  background-color: #232323;
+}
+
+/* line 64, ../sass/extras.scss */
+.project-gareth-header {
+  padding: 10px;
+  color: #fff;
+  background-color: #3d3d3d;
+}
+
+/* line 70, ../sass/extras.scss */
+.project-bitk, .project-bitk-tech-header {
+  padding: 10px;
+  color: #fff;
+  background-color: #4051B3;
+}
+
+/* line 76, ../sass/extras.scss */
+.project-bitk-header {
+  padding: 10px;
+  color: #fff;
+  background-color: #606fc6;
+}
+
+/* line 82, ../sass/extras.scss */
+.project-bitk-tech-item {
+  padding: 5px;
+  color: #fff;
+  background-color: #606fc6;
+}
+/* line 87, ../sass/extras.scss */
+.project-bitk-tech-item:not(:last-of-type) {
+  border-bottom: 2px solid #4051B3;
+}
+
+/* line 92, ../sass/extras.scss */
+.project-bitk-role-text {
+  padding: 10px;
+  color: #fff;
+  background-color: #606fc6;
+}
+
+/* line 100, ../sass/extras.scss */
+.project-bitk-link {
+  padding: 10px;
+  color: #fff;
+  background-color: #33408d;
+  width: 100%;
+  display: block;
+}
+/* line 106, ../sass/extras.scss */
+.project-bitk-link:hover {
+  color: #fff;
+  background-color: #252f68;
+}
+
+/* line 112, ../sass/extras.scss */
+.project-gareth-link {
+  padding: 10px;
+  color: #fff;
+  background-color: #0a0a0a;
+  width: 100%;
+  display: block;
+}
+/* line 118, ../sass/extras.scss */
+.project-gareth-link:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/* line 124, ../sass/extras.scss */
+a, a:hover {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+/* line 129, ../sass/extras.scss */
+.tech-bitk {
+  padding: 10px;
+  color: #fff;
+  background-color: #4051B3;
+}
+
+/* line 136, ../sass/extras.scss */
 .buffer-show-xs {
   margin: auto;
   position: fixed;
@@ -130,45 +219,45 @@
   height: 50%;
 }
 
-/* line 66, ../sass/extras.scss */
+/* line 146, ../sass/extras.scss */
 .bottom-margin {
   margin-bottom: 28px;
 }
 
-/* line 70, ../sass/extras.scss */
+/* line 150, ../sass/extras.scss */
 .vertically-centered-show-xs {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 78, ../sass/extras.scss */
+/* line 158, ../sass/extras.scss */
 .top-screen-padding {
   margin-top: 28px;
 }
 
-/* line 82, ../sass/extras.scss */
+/* line 162, ../sass/extras.scss */
 .no-padding {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 88, ../sass/extras.scss */
+/* line 168, ../sass/extras.scss */
 .navigation {
   margin-top: 28px;
 }
 
-/* line 92, ../sass/extras.scss */
+/* line 172, ../sass/extras.scss */
 body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 97, ../sass/extras.scss */
+/* line 177, ../sass/extras.scss */
 .btn {
   border-radius: 0px;
 }
 
-/* line 101, ../sass/extras.scss */
+/* line 181, ../sass/extras.scss */
 .masthead {
   padding: 10px;
   border: 1px solid #333;

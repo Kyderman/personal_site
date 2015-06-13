@@ -149,7 +149,7 @@
 
 /* line 82, ../sass/extras.scss */
 .project-bitk-tech-item {
-  padding: 5px;
+  padding: 6px;
   color: #fff;
   background-color: #606fc6;
 }
@@ -262,4 +262,26 @@ body {
   padding: 10px;
   border: 1px solid #333;
   color: #333;
+}
+
+/* line 187, ../sass/extras.scss */
+.project-info-bar {
+  background-color: #33408d;
+  color: #fff;
+}
+
+/* line 194, ../sass/extras.scss */
+.project-info-item {
+  padding: 10px;
+}
+
+/* line 197, ../sass/extras.scss */
+.project-info-item-link:hover {
+  background-color: #252f68;
+  color: #fff;
+}
+/* line 198, ../sass/extras.scss */
+.col-md-6 .project-info-item-link:hover {
+  background-color: #252f68;
+  color: #fff;
 }

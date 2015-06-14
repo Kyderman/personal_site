@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
 	checkURL(false, false, false);
 
 	setInterval("checkURL(false, false, true)",250);	//check for a change in the URL every 250 ms to detect if the history buttons have been used

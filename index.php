@@ -10,6 +10,7 @@
     
     <!-- Bootstrap -->
     <link href="stylesheets/styles.css" rel="stylesheet">
+    <link href="stylesheets/justifiedGallery.min.css" rel="stylesheet">
     <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
     <!-- Important Owl stylesheet -->
@@ -47,6 +48,7 @@
 <!-- Include js plugin -->
 <script src="owl-carousel/owl.carousel.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/jquery.justifiedGallery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/extras.js"></script>
   </body>

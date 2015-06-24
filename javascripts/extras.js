@@ -57,7 +57,7 @@ function loadNewContent(location) {
 	$('#content').load(location.substring(1) + '.html', function () 
 	{
 		$('#content').fadeIn(1000);
-		$('a').click(function (e)
+		$('a.internal-link').click(function (e)
 		{
       checkURL(this.hash, true, false);	
     });

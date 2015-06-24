@@ -12,16 +12,15 @@
     <link href="stylesheets/styles.css" rel="stylesheet">
     <link href="stylesheets/justifiedGallery.min.css" rel="stylesheet">
     <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="stylesheets/magnific-popup.css" rel="stylesheet">
+
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
-    <!-- Important Owl stylesheet -->
-<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    
  
 
 
 
     <link rel="stylesheet" href="stylesheets/extras.css?id=<?php echo rand(0,9999); ?>">
-    <!-- Default Theme -->
-<link rel="stylesheet" href="owl-carousel/owl.theme.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -45,11 +44,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
      
-<!-- Include js plugin -->
-<script src="owl-carousel/owl.carousel.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascripts/jquery.justifiedGallery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.magnific-popup.min.js"></script>
+    <script src="javascripts/handlebars-v3.0.3.js"></script>
     <script src="javascripts/extras.js"></script>
+  
+
   </body>
 </html>

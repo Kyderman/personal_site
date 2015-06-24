@@ -1,5 +1,6 @@
 @import "bootstrap/mixins";
 @import "bootstrap/variables";
+
 $blog-color: #4B89D6;
 $projects-color: #E01F39;
 $projects-color-lighten: lighten($projects-color, 10%);
@@ -9,129 +10,40 @@ $cv-color: #3CE01F;
 $white: #fff;
 $off-black: #333;
 $margin-size: 28px;
+
 $gareth-color: #232323;
+$gareth-color-light: lighten($gareth-color, 10%);
+$gareth-color-dark: darken($gareth-color, 10%);
+$gareth-color-darker: darken($gareth-color, 20%);
+
 $bitk-color: #4051B3;
+$bitk-color-light: lighten($bitk-color, 10%);
+$bitk-color-dark: darken($bitk-color, 10%);
+$bitk-color-darker: darken($bitk-color, 20%);
 
-.btn-blog {
-   @include button-variant($blog-color, $white, $blog-color);
-   &:hover {
-    background-color: $blog-color;
-    border-color: $blog-color;
-    color: $white;
-   }
-}
-.btn-cv {
-   @include button-variant($cv-color, $white, $cv-color);
-    &:hover {
-    background-color: $cv-color;
-    border-color: $cv-color;
-    color: $white;
-   }
-}
-.btn-projects {
-   @include button-variant($projects-color, $white, $projects-color);
-    &:hover {
-    background-color: $projects-color;
-    border-color: $projects-color;
-    color: $white;
-   }
+// Utilities
+html {
+  overflow-y: scroll;
 }
 
-.buffer
+// Set font
+body 
 {
-  @media (min-width: $screen-sm) {
-  margin: auto;
-  position: fixed;
-  top: 0; left: 0; bottom: 0; right: 0;
-  height:50%;
-  }
+  font-family: 'Raleway', sans-serif;
 }
 
-.vertically-centered {
-  @media (min-width: $screen-sm) {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-}
-
-.project-gareth {
-  padding:10px;
-  color:$white;
-  background-color: $gareth-color;
+// Remove default list styling
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom:0px;
 }
 
-.project-gareth-header {
-  padding:10px;
-  color:$white;
-  background-color: lighten($gareth-color, 10%);
-}
-
-.project-bitk, .project-bitk-tech-header {
-  padding:10px;
-  color:$white;
-  background-color: $bitk-color;
-}
-
-.project-bitk-header {
-  padding:10px;
-  color:$white;
-  background-color: lighten($bitk-color, 10%);
-}
-
-.project-bitk-tech-item {
-  padding:6px;
-  color:$white;
-  background-color: lighten($bitk-color, 10%);
-
-   &:not(:last-of-type) {
-    border-bottom: 2px solid $bitk-color;
-   }
-}
-
-.project-bitk-role-text {
-  padding:10px;
-  color:$white;
-  background-color: lighten($bitk-color, 10%);
-
-  
-}
-
-.project-bitk-link {
-  padding:10px;
-  color:$white;
-  background-color: darken($bitk-color, 10%);
-  width:100%;
-  display:block;
-  &:hover {
-     color:$white;
-     background-color: darken($bitk-color, 20%);
-  }
-}
-
-.project-gareth-link {
-  padding:10px;
-  color:$white;
-  background-color: darken($gareth-color, 10%);
-  width:100%;
-  display:block;
-  &:hover {
-     color:$white;
-     background-color: darken($gareth-color, 20%);
-  }
-}
-
+// Remove default anchor styling
 a, a:hover {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
 }
-
-.tech-bitk {
-  padding:10px;
-  color:$white;
-  background-color: $bitk-color;
-}
-
 
 .buffer-show-xs
 {
@@ -143,20 +55,10 @@ a, a:hover {
   
 }
 
-.bottom-margin {
-  margin-bottom:$margin-size;
-}
-
 .vertically-centered-show-xs {
-  
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-
-}
-
-.top-screen-padding {
-  margin-top:$margin-size;
 }
 
 .no-padding 
@@ -165,43 +67,259 @@ a, a:hover {
   margin:0px;
 }
 
-.navigation {
+.margin-top {
   margin-top:$margin-size;
 }
 
-body 
-{
-  font-family: 'Raleway', sans-serif;
+.margin-bottom {
+  margin-bottom:$margin-size;
 }
 
+// Remove border radius from all buttons
 .btn {
   border-radius:0px;
 }
 
-.masthead {
+// Thumbnail Zoom CSS
+.mfp-with-zoom .mfp-container, 
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+// Container for vertical centering
+.vertically-centered-container
+{
+  // Disable on small screens
+  @media (min-width: $screen-sm) {
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height:50%;
+  }
+}
+
+// Vertically centered item
+.vertically-centered {
+  // Disable on small screen
+  @media (min-width: $screen-sm) {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+}
+
+// Homepage
+
+// Blog button
+.btn-blog {
+   @include button-variant($blog-color, $white, $blog-color);
+   &:hover {
+    background-color: $blog-color;
+    border-color: $blog-color;
+    color: $white;
+   }
+}
+
+// CV button
+.btn-cv {
+   @include button-variant($cv-color, $white, $cv-color);
+    &:hover {
+    background-color: $cv-color;
+    border-color: $cv-color;
+    color: $white;
+   }
+}
+
+// Projects button
+.btn-projects {
+   @include button-variant($projects-color, $white, $projects-color);
+    &:hover {
+    background-color: $projects-color;
+    border-color: $projects-color;
+    color: $white;
+   }
+}
+
+
+// Projects Overview
+
+.projects-overview-title {
+  margin-bottom: $margin-size;
+}
+
+.project-overview-header {
   padding:10px;
-  border:1px solid $off-black;
-  color:$off-black;
-}
-
-.project-info-bar {
-  background-color: darken($bitk-color, 10%);
   color:$white;
+  &.project-overview-header-bitk {
+    background-color: lighten($bitk-color, 10%);
+  }
+  &.project-overview-header-gareth {
+    background-color: lighten($gareth-color, 10%);
+  }
 }
 
+.project-overview-description {
+  padding:10px;
+  color:$white;
+  &.project-overview-description-bitk {
+    background-color: $bitk-color;
+  }
+  &.project-overview-description-gareth {
+    background-color: $gareth-color;
+  }
+}
 
+.project-overview-link {
+  padding:10px;
+  color:$white;
+  width:100%;
+  display:block;
+
+  &:hover, :focus {
+     color:$white;
+  }
+  
+  &.project-overview-link-bitk {
+    background-color: $bitk-color-dark;
+    &:hover, :focus {
+     background-color: $bitk-color-darker;
+    }
+  }
+
+  &.project-overview-link-gareth {
+    background-color: $gareth-color-dark;
+    &:hover, :focus {
+     background-color: $gareth-color-darker;
+    }
+  }
+}
+
+// Full Project View
+
+.project-title {
+  padding:10px;
+  color:$white;
+  &.project-title-bitk {
+    background-color: $bitk-color;
+  }
+  &.project-title-gareth {
+    background-color: $gareth-color;
+  }
+}
+
+.project-info {
+  color:$white;
+  &.project-info-bitk {
+    background-color: $bitk-color-dark;
+  }
+  &.project-info-gareth {
+    background-color: $gareth-color-dark;
+  }
+}
 
 .project-info-item {
  padding:10px;
+ color: $white;
 }
-.project-info-item-link:hover {
+
+.project-info-item-link-bitk:hover {
   .col-md-6 & {
-    background-color:darken($bitk-color, 20%);
-    color: $white;
+    background-color:$bitk-color-darker;
   }
-   background-color:darken($bitk-color, 20%);
-    color: $white;
 }
+.project-info-item-link-gareth:hover {
+  .col-md-6 & {
+    background-color:$gareth-color-darker;
+  }
+}
+
+.project-description {
+  padding:10px;
+  color:$white;
+  &.project-description-bitk {
+    background-color:$bitk-color-light;
+  }
+  &.project-description-gareth {
+    background-color:$gareth-color-light;
+  }
+}
+
+.section-header {
+  padding:10px;
+  color:$white;
+  &.section-header-bitk {
+    background-color: $bitk-color;
+  }
+  &.section-header-gareth {
+    background-color: $gareth-color;
+  }
+}
+
+li.section-list-item {
+  padding:6px;
+  color:$white;
+  &.section-list-item-bitk {
+    background-color: $bitk-color-light;
+    &:not(:last-of-type) {
+      border-bottom: 2px solid $bitk-color;
+    }
+  }
+  &.section-list-item-gareth {
+    background-color: $gareth-color-light;
+    &:not(:last-of-type) {
+      border-bottom: 2px solid $gareth-color;
+    }
+  }
+}
+
+.section-text {
+  padding:10px;
+  color:$white;
+  &.section-text-bitk {
+    background-color: $bitk-color-light;
+  }
+  &.section-text-gareth {
+    background-color: $gareth-color-light;
+  }
+}
+
+.section-gallery {
+  //padding:10px;
+  padding-bottom:($margin-size - 10px);
+  margin-left:-10px;
+  margin-right:-10px;
+  color:$white;
+  /*&.section-gallery-bitk {
+    background-color: $bitk-color-light;
+  }*/
+}
+
+
+
+
+
+
+
+
+
 
 
 

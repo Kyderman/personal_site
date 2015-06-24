@@ -1,0 +1,146 @@
+
+<div class="container-fluid margin-top">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+      
+      <div class="project-title project-title-gareth">
+        <h1 class="no-padding">Gareth Manning - Chalkboard & Mural Artist</h1>
+      </div>
+   
+      <div class="project-info project-info-gareth">
+        <div class="row">
+          <div class="col-md-6 project-info-item">
+            <h5 class="no-padding"><i class="fa fa-calendar"></i> 2014 - Present</h5>
+          </div>
+          <div class="col-md-6">
+            <a href="http://garethmanning.co.uk">
+              <div class="project-info-item project-info-item-link-gareth">
+                <h5 class="no-padding"><i class="fa fa-external-link"></i> Visit Site</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-description project-description-gareth">
+        <h5 class="no-padding">A one-page scrolling portfolio site, with personal, client, portfolio (with Flickr API) and contact sections</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid margin-top">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-2 col-sm-3 col-xs-12">
+      <div class="section-header section-header-gareth text-center">
+        <h3 class="no-padding"><i class="fa fa-code"></i> Technology</h3>
+      </div>
+      <ul>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">PHP</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">HTML</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">Flickr API</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">CSS3</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">JQuery</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3 col-sm-5 col-xs-12">
+      <div class="section-header section-header-gareth text-center">
+        <h3 class="no-padding">My Role</h3>
+      </div>
+      <div class="section-text section-text-gareth text-center">
+        <p class="no-padding">Gareth approached me and asked me to create a website for his exciting new art business.
+        The opportunity to create a clean portfolio site was something I wanted to get involved with. The site was a
+        design of my own inspiration, using bootstrap as a base, with various libraries for the gallery and carousels.
+        However, these libraries, particularly the carousel, were modified to fit my design (black and white vs colour elements).
+        The various icon-like images were crafted by myself.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="section-header section-header-gareth text-center">
+        <h3 class="no-padding"><i class="fa fa-star"></i> Key Features</h3>
+      </div>
+      <ul>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">Single page scrolling with navigation</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">Flickr API integration</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+           <p class="no-padding">Responsive Captcha CSS</p>
+        </li>
+        <li class="section-list-item section-list-item-gareth text-center">
+          <p class="no-padding">Modern, sleek design</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <div class="section-header section-header-gareth text-center margin-top">
+        <h3 class="no-padding"><i class="fa fa-picture-o"></i> Media Gallery</h3>
+        
+      </div>
+      <div class="section-gallery section-gallery-gareth">
+        <div class="gallery">
+          <a class='gallery-image' href="gareth.png">
+              <img alt="Logo" src="gareth.png" />
+          </a>
+          <a class='gallery-image' href="gareth.png">
+              <img alt="Logo" src="gareth.png" />
+          </a>
+          <a class='gallery-image' href="gareth.png">
+              <img alt="Logo" src="gareth.png" />
+          </a>
+          <a class='gallery-image' href="gareth.png">
+              <img alt="Logo" src="gareth.png" />
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(".gallery").justifiedGallery({
+
+   lastRow: 'justify',
+   margins: 10,
+  
+  });
+
+
+  $('.gallery-image').magnificPopup({
+     type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+  overflowY: 'scroll',
+
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function 
+
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+  });
+
+</script>
